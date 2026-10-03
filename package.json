@@ -1,7 +1,7 @@
 {
   "name": "deepseek-colorful",
   "version": "1.0.0",
-  "description": "DeepSeek Colorful - A comprehensive UI theme and customizer plugin for DeepSeek Harness (Firefox Color style themes, frosted glass & live video/wallpapers)",
+  "description": "DeepSeek Colorful - A comprehensive UI theme and customizer plugin for DeepSeek Harness (Custom theme palettes, frosted glass & live video/wallpapers)",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
@@ -27,7 +27,7 @@
     "deepseek-harness",
     "dsh-plugin",
     "theme",
-    "firefox-color",
+    "ui-customizer",
     "frosted-glass",
     "wallpaper"
   ],

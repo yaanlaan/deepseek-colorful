@@ -1,12 +1,12 @@
 # DeepSeek Colorful 插件套件
 
-专为 DeepSeek Harness 打造的高自由度 UI 个性化调节套件。灵感源自经典 Firefox Color，并深度结合现代磨砂毛玻璃拟态 (Frosted Glass)、全景壁纸与动态视频背景系统。
+专为 DeepSeek Harness 打造的高自由度 UI 个性化调节套件。深度结合现代磨砂毛玻璃拟态 (Frosted Glass)、全景壁纸与动态视频背景系统。
 
 ---
 
 ## 核心特性
 
-### 1. 类似 Firefox Color 的全方位色彩调节
+### 1. 全方位色彩调节与视觉定制
 - 分区精准调色：
   - 主界面底色 (Base Background)：全局底板色彩，配合透明度调节透出背景图。
   - 侧边栏背景 (Sidebar Fill)：独立侧边栏底色与透光度。
