@@ -13,19 +13,16 @@ const engineContent = fs.readFileSync('lib/theme-engine.js', 'utf8')
   .replaceAll('export const ', 'const ');
 
 const storeContent = fs.readFileSync('lib/theme-store.js', 'utf8')
-  .replaceAll("import { DEFAULT_CONFIG, PRESET_THEMES, PRESET_WALLPAPERS } from './presets.js';", "")
-  .replaceAll("import { applyTheme, removeTheme, updateColorVariablesFast } from './theme-engine.js';", "")
+  .replace(/import\s*\{[\s\S]*?\}\s*from\s*['"][^'"]+['"];?/g, "")
   .replaceAll('export const ', 'const ')
   .replaceAll('export class ', 'class ');
 
 const viewContent = fs.readFileSync('lib/customizer-view.js', 'utf8')
-  .replaceAll("import { PRESET_THEMES, PRESET_WALLPAPERS } from './presets.js';", "")
-  .replaceAll("import { formatCssUrl, isVideoMedia } from './theme-engine.js';", "")
+  .replace(/import\s*\{[\s\S]*?\}\s*from\s*['"][^'"]+['"];?/g, "")
   .replaceAll('export function ', 'function ');
 
 const launcherContent = fs.readFileSync('lib/floating-launcher.js', 'utf8')
-  .replaceAll("import { createCustomizerDom } from './customizer-view.js';", "")
-  .replaceAll("import { themeStore } from './theme-store.js';", "")
+  .replace(/import\s*\{[\s\S]*?\}\s*from\s*['"][^'"]+['"];?/g, "")
   .replaceAll('export function ', 'function ')
   .replaceAll('export let ', 'let ');
 
@@ -107,7 +104,6 @@ window.__ModuleLoader__.load({
 
       installUiStyles();
 
-      // 初始化持久化主题，并向 store 传递 ctx 监听 DSH 官方明暗主题切换
       themeStore.init(ctx);
 
       installFloatingLauncher();
