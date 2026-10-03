@@ -1,0 +1,40 @@
+{
+  "name": "deepseek-colorful",
+  "version": "1.0.0",
+  "description": "DeepSeek Colorful - A comprehensive UI theme and customizer plugin for DeepSeek Harness (Firefox Color style themes, frosted glass & live video/wallpapers)",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js"
+  },
+  "dsh": {
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-renderer",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-ui-theme"
+      ],
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "~4.0.4"
+  },
+  "keywords": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "theme",
+    "firefox-color",
+    "frosted-glass",
+    "wallpaper"
+  ],
+  "author": "yaanlaan",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yaanlaan/deepseek-colorful.git"
+  }
+}
