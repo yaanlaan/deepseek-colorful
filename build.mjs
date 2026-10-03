@@ -1,9 +1,10 @@
 import fs from 'fs';
 import path from 'path';
 
-const stylesContent = fs.readFileSync('lib/styles.js', 'utf8')
-  .replace("export const UI_STYLES = `", "")
-  .replace(/`;\s*$/, "");
+const stylesRaw = fs.readFileSync('lib/styles.js', 'utf8');
+const firstTick = stylesRaw.indexOf('`');
+const lastTick = stylesRaw.lastIndexOf('`');
+const stylesContent = stylesRaw.slice(firstTick + 1, lastTick);
 
 const presetsContent = fs.readFileSync('lib/presets.js', 'utf8')
   .replaceAll('export const ', 'const ');
