@@ -1,7 +1,7 @@
 # DeepSeek Colorful 🎨
 
 A comprehensive and elegant UI theme, frosted glass & live wallpaper customizer plugin for **DeepSeek Harness** (Desktop & Web).  
-Inspired by the classic **Firefox Color**, empowered with modern **Acrylic Frosted Glass** aesthetics and **Dynamic Live Video Wallpapers**.
+Empowered with modern **Acrylic Frosted Glass** aesthetics and **Dynamic Live Video Wallpapers**.
 
 [中文说明文档 (README_zh.md)](./README_zh.md)
 
@@ -9,7 +9,7 @@ Inspired by the classic **Firefox Color**, empowered with modern **Acrylic Frost
 
 ## ✨ Features
 
-- **Firefox Color-style Palette Tuning**:
+- **Custom Palette Tuning**:
   - Full granular control over `Base Background`, `Sidebar Fill`, `Chat Cards`, `Composer Input`, `Brand Primary Accent`, `Hover Feedback`, `Code Block Background`, `Text Color`, and `Border Stroke`.
   - Non-blocking, discrete batch application with draft buffering for zero lag during color selection.
 - **Acrylic Frosted Glass (Glassmorphism)**:

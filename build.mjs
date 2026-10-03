@@ -29,7 +29,7 @@ const launcherContent = fs.readFileSync('lib/floating-launcher.js', 'utf8')
   .replaceAll('export function ', 'function ')
   .replaceAll('export let ', 'let ');
 
-const bundle = `// DeepSeek Colorful (Firefox Color style theme, frosted glass & background images/videos)
+const bundle = `// DeepSeek Colorful (Custom theme palettes, frosted glass & background images/videos)
 window.__ModuleLoader__.load({
   id: "deepseek-colorful",
   factory: (require) => {
