@@ -105,16 +105,12 @@ window.__ModuleLoader__.load({
     function apply(ctx) {
       console.log("[DeepSeek Colorful] Initializing client plugin...");
 
-      // 1. 安装基础 UI 样式与全屏背景层
       installUiStyles();
 
-      // 2. 初始化持久化主题，立即应用配色、磨砂与背景图
       themeStore.init();
 
-      // 3. 安装主界面右下角悬浮设计球
       installFloatingLauncher();
 
-      // 4. 注册到系统设置（Settings）面板的独立 section
       if (ctx.slots && typeof ctx.slots.inject === 'function') {
         ctx.slots.inject("settings.section", () => {
           return ctx.slots.register({
