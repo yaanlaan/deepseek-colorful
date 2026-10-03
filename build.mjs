@@ -107,7 +107,8 @@ window.__ModuleLoader__.load({
 
       installUiStyles();
 
-      themeStore.init();
+      // 初始化持久化主题，并向 store 传递 ctx 监听 DSH 官方明暗主题切换
+      themeStore.init(ctx);
 
       installFloatingLauncher();
 
