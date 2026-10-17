@@ -37,11 +37,15 @@ Empowered with modern **Acrylic Frosted Glass** aesthetics and **Dynamic Live Vi
      "deepseek-colorful": "link:/path/to/deepseek-colorful"
    }
    ```
-2. Enable it in your `cordis.patch.yml`:
-   ```yaml
-   - insert:
-       - id: deepseek-colorful
-         name: deepseek-colorful
+2. Enable it in your profile `dsh.profile.bundles`:
+   ```json
+   "dsh": {
+     "profile": {
+       "bundles": [
+         "deepseek-colorful"
+       ]
+     }
+   }
    ```
 3. Restart or refresh DeepSeek Harness (`Ctrl + R`).
 

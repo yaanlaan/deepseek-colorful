@@ -6,7 +6,11 @@ const firstTick = stylesRaw.indexOf('`');
 const lastTick = stylesRaw.lastIndexOf('`');
 const stylesContent = stylesRaw.slice(firstTick + 1, lastTick);
 
+const imageContent = fs.readFileSync('lib/lonely-cat-image.js', 'utf8')
+  .replaceAll('export const ', 'const ');
+
 const presetsContent = fs.readFileSync('lib/presets.js', 'utf8')
+  .replace(/import\s*\{[\s\S]*?\}\s*from\s*['"][^'"]+['"];?/g, "")
   .replaceAll('export const ', 'const ');
 
 const engineContent = fs.readFileSync('lib/theme-engine.js', 'utf8')
@@ -63,6 +67,8 @@ window.__ModuleLoader__.load({
     // ==========================================
     // 2. 预设配置与壁纸库
     // ==========================================
+    ${imageContent}
+
     ${presetsContent}
 
     // ==========================================
