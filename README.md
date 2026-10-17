@@ -7,6 +7,18 @@ Empowered with modern **Acrylic Frosted Glass** aesthetics and **Dynamic Live Vi
 
 ---
 
+## 📸 Screenshots & Visual Showcase
+
+| Lonely Cat (Default · Matcha Forest & Glassmorphism) | DeepSeek Official (Classic Ocean Blue & White) |
+| :---: | :---: |
+| ![Lonely Cat](assets/screenshots/preview-lonely-cat.png) | ![DeepSeek Official](assets/screenshots/preview-official-blue.png) |
+
+| Twilight Purple (Mystic Violet & Flame Amber) | Cyberpunk 2077 (Neon Cyan & Tech Magenta) |
+| :---: | :---: |
+| ![Twilight Purple](assets/screenshots/preview-twilight-purple.png) | ![Cyberpunk 2077](assets/screenshots/preview-cyberpunk.png) |
+
+---
+
 ## ✨ Features
 
 - **Custom Palette Tuning**:

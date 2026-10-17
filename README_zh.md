@@ -4,6 +4,18 @@
 
 ---
 
+## 📸 视觉预览 (Screenshots & Showcase)
+
+| 孤单猫咪 (首选默认 · 全景壁纸与抹茶森林双模态) | DeepSeek 原生 (官方经典深海极客蓝白) |
+| :---: | :---: |
+| ![孤单猫咪](assets/screenshots/preview-lonely-cat.png) | ![DeepSeek 原生](assets/screenshots/preview-official-blue.png) |
+
+| 极光紫魅 (神秘深邃暗紫与烈焰橙) | 赛博朋克 2077 (未来科技霓虹青粉) |
+| :---: | :---: |
+| ![极光紫魅](assets/screenshots/preview-twilight-purple.png) | ![赛博朋克](assets/screenshots/preview-cyberpunk.png) |
+
+---
+
 ## 核心特性
 
 ### 1. 全方位色彩调节与视觉定制
