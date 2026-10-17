@@ -53,6 +53,13 @@ window.__ModuleLoader__.load({
       }
     }
 
+    function uninstallUiStyles() {
+      if (typeof document === 'undefined') return;
+      const tagId = 'dsh-customizer-ui-base-styles';
+      const el = document.getElementById(tagId);
+      if (el) el.remove();
+    }
+
     // ==========================================
     // 2. 预设配置与壁纸库
     // ==========================================
@@ -87,6 +94,11 @@ window.__ModuleLoader__.load({
         if (containerRef.current) {
           containerRef.current.innerHTML = '';
           containerRef.current.appendChild(createCustomizerDom(themeStore));
+          return () => {
+            if (containerRef.current) {
+              containerRef.current.innerHTML = '';
+            }
+          };
         }
       }, []);
       return React.createElement('div', {
@@ -122,6 +134,26 @@ window.__ModuleLoader__.load({
             label: () => "外观定制",
             locale: "settings.customizer"
           }, CustomizerSettingsSection);
+        });
+      }
+
+      // 5. 生命周期自动清理 (当插件在管理面板中被禁用时优雅卸载)
+      if (typeof ctx.effect === 'function') {
+        ctx.effect(() => {
+          return () => {
+            console.log("[DeepSeek Colorful] Cleaning up plugin resources...");
+            try {
+              if (typeof uninstallFloatingLauncher === 'function') {
+                uninstallFloatingLauncher();
+              }
+              if (typeof removeTheme === 'function') {
+                removeTheme();
+              }
+              uninstallUiStyles();
+            } catch (err) {
+              console.warn("[DeepSeek Colorful] Cleanup error:", err);
+            }
+          };
         });
       }
 

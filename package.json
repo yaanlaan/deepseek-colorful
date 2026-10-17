@@ -8,7 +8,19 @@
     ".": "./lib/index.js",
     "./client": "./lib/client.js"
   },
+  "icon": "./icon.png",
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "engines": {
+    "node": ">=20",
+    "dsh": "^0.2.0"
+  },
   "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
     "client": {
       "inject": [
         "@deepseek-ai/dsh-client-ui-renderer",
